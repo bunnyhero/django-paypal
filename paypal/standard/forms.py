@@ -59,6 +59,7 @@ class PayPalPaymentsForm(forms.Form):
     item_name = forms.CharField(widget=ValueHiddenInput())
     item_number = forms.CharField(widget=ValueHiddenInput())
     quantity = forms.CharField(widget=ValueHiddenInput())
+    tax = forms.IntegerField(widget=ValueHiddenInput())
     
     # Subscription Related.
     a1 = forms.CharField(widget=ValueHiddenInput())  # Trial 1 Price
